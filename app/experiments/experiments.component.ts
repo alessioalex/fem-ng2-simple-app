@@ -23,6 +23,7 @@ export class ExperimentsComponent implements OnInit {
   ngOnInit() {
     this.experiments = this._experimentsService.getExperiments();
     this.message = this._stateService.getMessage();
+    this._stateService.addVisit();
   }
 
   updateMessage(m: string): void {

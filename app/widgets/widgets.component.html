@@ -1,0 +1,15 @@
+<div>
+  <p [style.fontSize]="fontSize">{{message}}</p>
+
+  <button (click)="increaseFontSize()">Increase Font Size</button>
+
+  <hr />
+
+  <input type="text" [(ngModel)]="fontSize" />
+
+  <ul>
+    <li *ngFor="#option of options; #i = index">{{i}}: {{option?.name}}</li>
+  </ul>
+</div>
+
+<hr />

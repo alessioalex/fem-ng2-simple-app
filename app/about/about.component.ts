@@ -14,6 +14,7 @@ export class AboutComponent implements OnInit{
 
   ngOnInit() {
     this.message = this._stateService.getMessage();
+    this._stateService.addVisit();
   }
 
   updateMessage(m: string): void {
