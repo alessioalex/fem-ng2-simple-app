@@ -10,6 +10,11 @@
   <ul>
     <li *ngFor="#option of options; #i = index">{{i}}: {{option?.name}}</li>
   </ul>
+
+  <h3>Widgets</h3>
+  <ul>
+    <li *ngFor="#widget of widgets; #i = index" [style.color]="widget.color">{{i}}: {{widget.name}}</li>
+  </ul>
 </div>
 
 <hr />
