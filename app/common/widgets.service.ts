@@ -26,3 +26,5 @@ export class WidgetsService {
     });
   }
 }
+
+export const WIDGETS_SERVICE_PROVIDERS = [WidgetsService, ColorService];
